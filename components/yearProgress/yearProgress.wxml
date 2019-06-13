@@ -1,0 +1,4 @@
+<view class="yearProgress">
+  <progress percent="{{perNum}}" activeColor="#EA5A49"></progress>
+  <p>{{year}}已经过去了{{days}}天，{{perNum}}%</p>
+</view>

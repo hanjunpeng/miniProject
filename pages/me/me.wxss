@@ -1,0 +1,13 @@
+.me-wrap{
+  padding: 0 30rpx;
+}
+.me-userPic{
+  margin-top: 100rpx;
+  text-align: center
+}
+.me-userPic image{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}

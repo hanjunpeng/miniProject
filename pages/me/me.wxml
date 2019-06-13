@@ -1,0 +1,10 @@
+<!-- me class：me -->
+<view class="me-wrap">
+  <view class="me-userPic">
+    <image src="{{userinfo.avatarUrl}}" alt="" />
+    <button wx:if="{{state}}" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">{{userinfo.nickName}}</button>
+    <view wx:else>{{userinfo.nickName}}</view>
+  </view>
+  <year-progress></year-progress>
+  <location-info></location-info>
+</view>

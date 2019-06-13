@@ -1,0 +1,4 @@
+<view class="locationInfo">
+  <button bindtap="location" wx:if="{{state}}">获取位置</button>
+  <view wx:else>{{local}}</view>
+</view>
