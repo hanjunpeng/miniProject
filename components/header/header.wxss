@@ -1,0 +1,14 @@
+.header-wrap{
+  padding: 80rpx;
+}
+.header-title{
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+}
+.header-desc{
+  margin-top: 5px;
+  color: #888888;
+  text-align: left;
+  font-size: 14px;
+}

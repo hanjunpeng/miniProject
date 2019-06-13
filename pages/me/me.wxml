@@ -6,5 +6,6 @@
     <view wx:else>{{userinfo.nickName}}</view>
   </view>
   <year-progress></year-progress>
-  <location-info></location-info>
+  <location-info bindmyevent="onMyevent"></location-info>
+  <button class="me-child">{{childProps.name}}</button>
 </view>

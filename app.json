@@ -1,14 +1,14 @@
 {
-  "pages":[
-    "pages/me/me",
+  "pages": [
     "pages/index/index",
+    "pages/me/me",
     "pages/seting/seting"
   ],
-  "window":{
-    "backgroundTextStyle":"dark",
+  "window": {
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Demo",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "helloDemo",
+    "navigationBarTextStyle": "black"
   },
   "permission": {
     "scope.userLocation": {
@@ -34,5 +34,6 @@
         "selectedIconPath": "static/tabs/me-active.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

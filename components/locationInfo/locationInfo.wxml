@@ -1,4 +1,5 @@
 <view class="locationInfo">
   <button bindtap="location" wx:if="{{state}}">获取位置</button>
   <view wx:else>{{local}}</view>
+  <button class="location-props" bindtap="handleProps">子组件向父组件传递</button>
 </view>

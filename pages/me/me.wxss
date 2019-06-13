@@ -11,3 +11,7 @@
   margin: 20rpx;
   border-radius: 50%;
 }
+.me-child{
+  width: 60%;
+  font-size: 12px;
+}

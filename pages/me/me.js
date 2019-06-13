@@ -4,7 +4,14 @@ Page({
       avatarUrl: '/static/me/unlogin.png',
       nickName: '点击登录',
     },
-    state: true
+    state: true,
+    childProps: {}
+  },
+  // 接收子组件传递的参数
+  onMyevent (obj) {
+    this.setData({
+      childProps: obj.detail
+    })
   },
   onLoad: function () {
     this.init()

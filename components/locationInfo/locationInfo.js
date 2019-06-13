@@ -5,6 +5,11 @@ Component({
     state: false
   },
   methods: {
+    // 子组件向父组件传递
+    handleProps () {
+      let obj = { name: 'hjp', childer: 'wh' }
+      this.triggerEvent('myevent', obj, { bubbles: true })
+    },
     location () {
       this.getLocation()
     },

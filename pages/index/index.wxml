@@ -1,4 +1,14 @@
 <!--index.wxml-->
 <view class="container">
-
+  <header></header>
+  <view class="container-bd">
+    <view class="container-list">
+      <block wx:for="{{list}}" wx:key="id">
+        <view class="container-li">
+          <view id="{{item.id}}" class="container-flex">{{item.name}}</view>
+        </view>
+        <view></view>
+      </block>
+    </view>
+  </view>
 </view>
