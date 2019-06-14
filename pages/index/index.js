@@ -9,13 +9,13 @@ Page({
         id: 'view',
         name: '视图容器',
         open: false,
-        pages: ['Flex', 'scroll-view', 'swiper', 'movable-view']
+        pages: ['flex', 'scrollView', 'swiper', 'movableView']
       },
       {
         id: 'widget',
         name: '基础组件',
         open: false,
-        pages: ['Text', 'Article', 'Footer', 'grid']
+        pages: ['Text', 'article', 'footer', 'grid']
       },
       {
         id: 'form',
@@ -42,5 +42,18 @@ Page({
         pages: ['Text', 'Article', 'Footer', 'grid']
       }
     ]
+  },
+  handleToggle (e) {
+    let id = e.currentTarget.id, list = this.data.list;
+    for (let i = 0; i < list.length; i++) {
+      if (list[i].id === id) {
+        list[i].open = !list[i].open
+      } else {
+        list[i].open = false
+      }
+    }
+    this.setData({
+      list: list
+    })
   }
 })

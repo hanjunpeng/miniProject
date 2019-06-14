@@ -4,10 +4,22 @@
   <view class="container-bd">
     <view class="container-list">
       <block wx:for="{{list}}" wx:key="id">
-        <view class="container-li">
-          <view id="{{item.id}}" class="container-flex">{{item.name}}</view>
+        <view class="container-box">
+          <view id="{{item.id}}" class="container-li {{item.open ? 'container-selecticon' : ''}}" bindtap="handleToggle">
+            <view class="container-flex">{{item.name}}</view>
+            <view class="container-icon container-iconcommon"></view>
+          </view>
+          <view class="container-kind {{item.open ? 'container-list-show' : ''}}">
+            <view class="container-cells">
+              <block wx:for="{{item.pages}}" wx:for-item="res" wx:key="*this">
+                <navigator url="/pages/example/{{res}}/{{res}}" class="container-navi">
+                  <view class="container-cell-bd">{{res}}</view>
+                  <view class="container-icon container-iconXia"></view>
+                </navigator>
+              </block>
+            </view>
+          </view>
         </view>
-        <view></view>
       </block>
     </view>
   </view>

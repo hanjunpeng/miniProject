@@ -2,7 +2,16 @@
   "pages": [
     "pages/index/index",
     "pages/me/me",
-    "pages/seting/seting"
+    "pages/seting/seting",
+
+    "pages/example/text/text",
+    "pages/example/scrollView/scrollView",
+    "pages/example/swiper/swiper",
+    "pages/example/flex/flex",
+    "pages/example/movableView/movableView",
+    "pages/example/grid/grid",
+    "pages/example/footer/footer",
+    "pages/example/article/article"
   ],
   "window": {
     "backgroundTextStyle": "dark",
