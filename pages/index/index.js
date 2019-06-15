@@ -15,7 +15,7 @@ Page({
         id: 'widget',
         name: '基础组件',
         open: false,
-        pages: ['Text', 'article', 'footer', 'grid']
+        pages: ['Text', 'article', 'footer', 'grid', 'audio', 'video']
       },
       {
         id: 'form',

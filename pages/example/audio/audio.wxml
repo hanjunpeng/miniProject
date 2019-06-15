@@ -1,0 +1,7 @@
+<view class="audio-wrap">
+  <view class="audio-title">Audio</view>
+  <audio id="myAudio" controls loop poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}"></audio>
+  <button type="primary" bindtap="audioPlay">播放</button>
+  <button type="primary" bindtap="audioPause">暂停</button>
+  <view>当前状态：{{status}}</view>
+</view>

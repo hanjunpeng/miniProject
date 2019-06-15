@@ -1,0 +1,7 @@
+.audio-wrap{
+  width: 100%;
+  text-align: center;
+}
+.audio-title{
+  padding: 20px;
+}

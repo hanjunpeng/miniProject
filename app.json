@@ -11,7 +11,9 @@
     "pages/example/movableView/movableView",
     "pages/example/grid/grid",
     "pages/example/footer/footer",
-    "pages/example/article/article"
+    "pages/example/article/article",
+    "pages/example/audio/audio",
+    "pages/example/video/video"
   ],
   "window": {
     "backgroundTextStyle": "dark",
