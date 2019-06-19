@@ -4,7 +4,7 @@
  * @param {*} content 
  */
 export function message (title, content) {
-  wx.showMondal({
+  wx.showModal({
     title: title,
     content: content,
     showCancel: false

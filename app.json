@@ -9,6 +9,7 @@
     "pages/example/swiper/swiper",
     "pages/example/flex/flex",
     "pages/example/movableView/movableView",
+    "pages/example/request/request",
     "pages/example/grid/grid",
     "pages/example/footer/footer",
     "pages/example/article/article",

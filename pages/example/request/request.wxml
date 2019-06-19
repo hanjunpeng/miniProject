@@ -1,0 +1,3 @@
+<view>
+  <button type="primary" bindtap="handleRequest">获取请求</button>
+</view>

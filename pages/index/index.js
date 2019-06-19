@@ -9,7 +9,7 @@ Page({
         id: 'view',
         name: '视图容器',
         open: false,
-        pages: ['flex', 'scrollView', 'swiper', 'movableView']
+        pages: ['request', 'flex', 'scrollView', 'swiper', 'movableView']
       },
       {
         id: 'widget',
