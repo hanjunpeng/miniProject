@@ -25,6 +25,16 @@ Page({
       this.getUserInFo()
     }
   },
+  getPhoneNumber (e) {
+    if (e.detail.errMsg.indexOf('access denied') > 0) {
+      wx.showModal({
+        title: '领取失败',
+        content: '该小程序不能授权',
+        showCancel: false,
+        confirmText: '返回授权'
+      })
+    }
+  },
   requestData (e) {
     if (e) {
       let str = 'userinfo.avatarUrl'
@@ -45,7 +55,27 @@ Page({
       }
     })
   },
+  handleLogin () {
+    wx.login({
+      success (res) {
+        console.log('login',res)
+      }
+    })
+  },
+  checkLogin () {
+    let _this = this
+    wx.checkSession({
+      success () {
+        console.log('已登录')
+      },
+      fail () {
+        _this.handleLogin()
+      }
+    })
+  },
   init () {
+    this.checkLogin()
+    // 查看用户是否授权信息
     wx.getSetting({
       success: res => {
         if (!res.authSetting['scope.userInfo']) { // 如果没有授权用户信息
